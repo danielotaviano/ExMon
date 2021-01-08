@@ -45,7 +45,6 @@ defmodule ExMon do
   end
 
   defp computer_move(%{turn: :computer, status: :continue}) do
-    IO.puts("aaaaaaaaaaaa")
     move = {:ok, Enum.random(@computer_moves)}
     do_move(move)
   end
