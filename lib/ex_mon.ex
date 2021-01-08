@@ -6,8 +6,8 @@ defmodule ExMon do
   end
 
   def start_game(player) do
-    computer = create_player("Robotinik", :punch, :kick, :heal)
-
-    Game.start(computer, player)
+    "Robotinik"
+    |> create_player(:punch, :kick, :heal)
+    |> Game.start(player)
   end
 end
