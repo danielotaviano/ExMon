@@ -1,5 +1,5 @@
 defmodule ExMon do
-  alias ExMon.Player
+  alias ExMon.{Game, Player}
 
   def create_player(name, move_avg, move_rnd, move_heal) do
     Player.build(name, move_rnd, move_avg, move_heal)
@@ -8,6 +8,6 @@ defmodule ExMon do
   def start_game(player) do
     computer = create_player("Robotinik", :punch, :kick, :heal)
 
-    ExMon.Game.start(computer, player)
+    Game.start(computer, player)
   end
 end
