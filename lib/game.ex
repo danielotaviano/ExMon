@@ -6,7 +6,7 @@ defmodule ExMon.Game do
     initial_value = %{
       computer: computer,
       player: player,
-      turn: :player,
+      turn: Enum.random([:player, :computer]),
       status: :started
     }
 
